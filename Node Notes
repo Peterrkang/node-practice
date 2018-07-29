@@ -5,12 +5,17 @@ javascript runtime that uses the v8 engine - opensource javacsript engine writte
 compiled js to machine code
 i/o - input output
 
-node --inspect-brk filename
-nodemon inspect *filename
+nodemon --inspect-brk *filename
 n - next
 c - continue
 debugger
 repl - check var/obj
 
 
-all instant actions are 
+main() - wrapper func
+
+
+event loop
+call stack - instantaneous actions fire first
+node apis - aka timeout wait to finish
+callback queue - wait in queue to fire
